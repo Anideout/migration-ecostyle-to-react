@@ -1,0 +1,345 @@
+/* Colores naturales y armoniosos para plantas */
+:root {
+  --color-forest: #2d5a27; /* Verde oscuro como hojas maduras */
+  --color-sage: #95ab8b; /* Verde salvia suave */
+  --color-moss: #3f4b3b; /* Verde musgo */
+  --color-earth: #59453c; /* Marrón tierra */
+  --color-leaf: #4a7c59; /* Verde hoja */
+  --color-light-sage: #c8d5b9; /* Verde claro */
+}
+
+/* Reset y estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* Contenedor principal ocupa todo el ancho */
+.container-fluid {
+  width: 100%;
+  max-width: 100%;
+  padding: 20px;
+  flex: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Para que el contenido principal crezca */
+main {
+  flex: 1;
+  width: 100%;
+}
+
+/* Estilos del Navbar */
+.navbar.navbar-dark {
+  background-color: var(--color-forest) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem 2rem;
+}
+
+.navbar-dark .navbar-brand {
+  color: #ffffff;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  font-size: 1.5rem;
+}
+
+.navbar-dark .navbar-brand:hover {
+  color: var(--color-light-sage);
+}
+
+.navbar-dark .nav-link {
+  color: var(--color-sage) !important;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.navbar-dark .nav-link:hover,
+.navbar-dark .nav-link.active {
+  color: #ffffff !important;
+}
+
+.navbar-dark .btn-outline-light:hover {
+  background-color: var(--color-sage);
+  border-color: var(--color-sage);
+}
+
+.navbar .badge {
+  font-size: 0.7rem;
+  padding: 0.25em 0.5em;
+}
+
+/* Offcanvas */
+.offcanvas.text-bg-dark {
+  background-color: var(--color-moss) !important;
+}
+
+/* Dropdown */
+.dropdown-menu-dark {
+  background-color: var(--color-moss);
+  border: 1px solid var(--color-sage);
+}
+
+.dropdown-menu-dark .dropdown-item:hover {
+  background-color: var(--color-forest);
+}
+
+/* Tarjetas */
+.card {
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 100%;
+  border: none;
+  overflow: hidden;
+}
+
+.card-header {
+  background-color: var(--color-forest) !important;
+  color: white;
+  font-weight: bold;
+  padding: 1rem 1.5rem;
+  border-bottom: 3px solid var(--color-sage);
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+/* Botones */
+.btn-main {
+  background-color: var(--color-forest);
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-main:hover {
+  background-color: var(--color-leaf);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-main:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-outline-secondary {
+  border-color: var(--color-sage);
+  color: var(--color-forest);
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--color-sage);
+  border-color: var(--color-sage);
+  color: white;
+}
+
+.btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Tabla responsive */
+.table-responsive {
+  overflow-x: auto;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table {
+  background-color: white;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.table thead {
+  background-color: var(--color-light-sage);
+}
+
+.table thead th {
+  color: var(--color-forest);
+  font-weight: 600;
+  border-bottom: 2px solid var(--color-sage);
+}
+
+.table td,
+.table th {
+  vertical-align: middle;
+  padding: 1rem;
+}
+
+.table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.table tfoot th {
+  font-size: 1.2rem;
+  background-color: var(--color-light-sage);
+  padding: 15px;
+  color: var(--color-forest);
+  font-weight: 700;
+}
+
+/* Imagen pequeña */
+.img-sm {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid var(--color-sage);
+}
+
+/* Alertas */
+.alert {
+  border-radius: 8px;
+  border: none;
+}
+
+.alert-info {
+  background-color: var(--color-light-sage);
+  color: var(--color-forest);
+}
+
+.alert-success {
+  background-color: var(--color-forest);
+  color: white;
+}
+
+.alert-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Estilos del Footer */
+footer.bg-dark {
+  background-color: var(--color-forest) !important;
+  border-top: 3px solid var(--color-sage);
+  margin-top: auto;
+  width: 100%;
+}
+
+footer .text-light {
+  color: var(--color-sage) !important;
+}
+
+footer .container div:first-child {
+  color: #ffffff;
+}
+
+footer h5 {
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+
+footer a {
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffffff !important;
+}
+
+footer .social-links a {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+footer .social-links a:hover {
+  transform: translateY(-3px);
+}
+
+/* Back to shop */
+.back-to-shop {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.back-to-shop a {
+  font-size: 24px;
+  text-decoration: none;
+  color: var(--color-forest);
+  transition: color 0.3s ease;
+}
+
+.back-to-shop a:hover {
+  color: var(--color-leaf);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container-fluid {
+    padding: 10px;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+
+  .table td,
+  .table th {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .img-sm {
+    width: 40px;
+    height: 40px;
+  }
+
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .back-to-shop {
+    padding: 10px;
+  }
+
+  .card-header {
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    font-size: 0.875rem;
+    padding: 0.375rem 0.75rem;
+  }
+}

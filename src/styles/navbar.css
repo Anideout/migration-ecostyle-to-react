@@ -1,0 +1,20 @@
+/* Ajuste de tamaño de navbar */
+.navbar {
+	min-height: 48px !important;
+	padding-top: 0.1rem !important;
+	padding-bottom: 0.1rem !important;
+}
+.navbar .navbar-brand {
+	font-size: 1.1rem !important;
+	padding-top: 0.2rem !important;
+	padding-bottom: 0.2rem !important;
+}
+.navbar .nav-link, .navbar .dropdown-toggle {
+	font-size: 0.95rem !important;
+	padding-top: 0.3rem !important;
+	padding-bottom: 0.3rem !important;
+}
+.offcanvas-header, .offcanvas-body {
+	padding-top: 0.5rem !important;
+	padding-bottom: 0.5rem !important;
+}

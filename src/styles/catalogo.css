@@ -1,0 +1,73 @@
+body {
+            background-color: #f8f9fa;
+            font-family: 'Arial', sans-serif;
+        }
+        .header-catalogo {
+            background: linear-gradient(135deg, #2e7d32 0%, #388e3c 100%);
+            color: white;
+            padding: 6rem 0 3rem;
+            margin-bottom: 2rem;
+        }
+        .planta-carta {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .plant-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        .plant-image {
+            height: 250px;
+            object-fit: cover;
+            background: linear-gradient(45deg, #e8f5e8, #c8e6c9);
+        }
+        .disponibilidad {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 0.8rem;
+            padding: 0.5rem 1rem;
+        }
+        .price-tag {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2e7d32;
+        }
+        .precio-body {
+            padding: 1.5rem;
+        }
+        .planta-btn {
+            background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);
+            border: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .btn-plant:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(46, 125, 50, 0.3);
+        }
+        .plant-features {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+        .plant-features li {
+            padding: 0.3rem 0;
+            color: #666;
+        }
+        .plant-features li i {
+            color: #4caf50;
+            margin-right: 0.5rem;
+        }
+        .filter-section {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
